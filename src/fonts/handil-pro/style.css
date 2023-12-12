@@ -1,0 +1,6 @@
+@font-face {
+  font-family: "Handil Pro";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Handil Pro Medium"), url("HandilPro-Medium.woff") format("woff");
+}

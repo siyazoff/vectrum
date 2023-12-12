@@ -1,0 +1,46 @@
+.company
+    padding-top: 4.4rem
+    &__bg
+        position: absolute
+        top: 0
+        left: 0
+        width: 100vw
+        height: 100vh
+        z-index: -1
+        background-blend-mode: darken
+        background: url(../src/img/bg-about.webp) center / cover, #171717CC
+    &__content
+        width: 69.3vw
+
+    &__box
+        padding: 2rem 6.4rem 4rem 3.2rem
+        display: flex
+        flex-direction: column
+        a
+            width: fit-content
+            margin-left: auto
+        &_desc
+            display: flex
+            gap: 3.2rem
+            p
+                max-width: 43.5rem
+    &__facts
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        height: 26.341463414634145vh
+        border-top: .1rem solid $color-gray
+
+        .fact
+            padding: 3.6rem 3.2rem
+
+            &:not(:last-child)
+                border-right: .1rem solid $color-gray
+                
+
+            span
+                color: $-color-gray-light
+                margin-bottom: 2.4rem
+                display: inline-block
+            h3
+                color: $color-white
+

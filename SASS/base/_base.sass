@@ -1,0 +1,121 @@
+*, ::after, ::before
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+html
+    font-size: 62.5%
+
+body
+    background-color: $color-white
+
+* 
+  font-family: 'Helvetica'
+  border: 0
+  box-sizing: border-box
+
+
+*,
+*:before,
+*:after 
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+  padding: 0
+  margin: 0
+
+
+:focus,
+:active 
+  outline: none
+
+
+a:focus,
+a:active 
+  outline: none
+
+
+a:hover 
+  color: inherit
+
+
+nav,
+footer,
+header,
+aside 
+  display: block
+
+
+html,
+body 
+  height: 100%
+  width: 100%
+
+
+input,
+button,
+textarea 
+  font-family: inherit
+
+
+input::ms-clear 
+  display: none
+
+button 
+  cursor: pointer
+
+button::-moz-focus-inner 
+  padding: 0
+  border: 0
+
+a,
+a:visited 
+  text-decoration: none !important
+  color: white
+
+a:hover 
+  text-decoration: none
+
+ol,
+ul,
+dl
+  padding: 0
+  padding-left: 0
+  margin-bottom: 0
+  
+
+ul li 
+  list-style: none
+
+img 
+  vertical-align: top
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p 
+  margin: 0
+  margin-bottom: 0
+
+
+html 
+  scroll-behavior: smooth
+  overflow-x: hidden
+
+  &::-webkit-scrollbar 
+    width: 0.5rem
+  
+  &::-webkit-scrollbar-track 
+    background: $color-blue
+  
+  &::-webkit-scrollbar-thumb 
+    background: linear-gradient(112.92deg,rgba(255, 255, 255, 0.36) 10.45%, rgba(255, 255, 255, 0.09) 88.73%)
+  
+
+
+main 
+  overflow-x: hidden
+  width: 100%
+

@@ -1,0 +1,147 @@
+
+.medication
+    padding: 4.4rem 0 0 0 
+
+    &_content
+        width: 69.3vw
+
+    &__heading
+        h2
+            color: #434443
+        h3
+            color: $-color-blue-dark
+
+    &__wrapper
+        margin-top: 2rem
+    
+    &__grid_1
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+
+    &__card
+        position: relative
+        padding: 2.8rem 3.2rem 4.4rem
+        height: 46.09756097560975vh
+        overflow: hidden
+        z-index: 0
+        border: .05rem solid $color-violet
+
+        &::after
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            z-index: 0
+            background: white
+            width: 100%
+            height: 100%
+            transition: all .5s ease-in-out
+
+        &:hover
+            &::after
+                transform: translateX(100%)
+                transition: all .8s ease-in-out
+            .margin_span, .margin_h
+                opacity: 0
+                transition: all .5s ease-in-out
+
+            .medication__card_inner
+                background-size: 180%
+                transition: background-size 15s
+
+        .margin
+            &_span
+                color: $color-violet
+                position: relative
+                z-index: 1
+                transition: all .5s ease-in-out
+
+            &_h
+                margin-top: 1.6rem
+                color: $-color-blue-dark
+                position: relative
+                z-index: 1
+                transition: all .5s ease-in-out
+
+ 
+        &_inner
+            padding: 2.8rem 3.2rem 4.4rem
+            position: absolute
+            z-index: 0
+            top: 0
+            left: 0
+            width: 100%
+            height: auto
+            height: 46.09756097560975vh
+            background-blend-mode: darken
+            background-position: center
+            background-size: 110%
+            transition: background-size 5s
+            display: flex
+            flex-direction: column
+                
+
+
+            .margin_inner
+                &_a
+                    padding: 2rem 6rem
+                    margin-top: auto
+                    color: $-color-blue-dark
+                    text-align: center
+
+                &_p
+                    margin-top: 1.2rem
+
+
+                &_h
+                    margin-top: 1.6rem
+                    color: $color-white
+
+                &_span
+                    color: $-color-gray-light
+
+    &__grid_2
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+
+    &__card_big
+        height: 36.1219512195122vh
+        padding: 2.9rem 3.2rem 4.1rem 3.2rem
+
+        &:hover
+            .opacity
+                opacity: 0
+                
+        .head_card
+            width: 100%
+            display: flex
+            justify-content: space-between
+            z-index: 1
+            position: relative
+            &.opacity
+                transition: 1s all
+                h3
+                    color: $-color-blue-dark
+
+                span
+                    color: $color-violet
+            h3
+                color: $color-white
+            span
+                color: $-color-gray-light
+        .body_card
+            display: flex
+            width: 100%
+            justify-content: space-between
+            p
+                max-width: 24.8rem
+
+            img
+                width: 100%
+                height: 100%
+        &_inner
+            height: auto
+            // min-height: 28.8rem
+            height: 36.1219512195122vh
+            .margin_inner_a
+                width: fit-content
