@@ -12,7 +12,15 @@ const swiperMain = new Swiper(".swiper-main", {
   mousewheel: {
     releaseOnEdges: true,
   },
-  // effect: "cube",
+  effect: "creative",
+  creativeEffect: {
+    prev: {
+      translate: [0, "-100%", 0],
+    },
+    next: {
+      translate: [0, "200%", 0],
+    },
+  },
   speed: 1000,
 
   pagination: {
@@ -28,15 +36,15 @@ const swiperMain = new Swiper(".swiper-main", {
   on: {
     slideChange: function () {
       var activeIndex = this.activeIndex;
-      let changeBlueItems = `.header__logo, 
-                            .swiper-pagination-bullet, 
-                            .header__sandwich_btn, 
-                            .header__contacts, 
-                            .header__menu_btn, 
+      let changeBlueItems = `.header__logo,
+                            .swiper-pagination-bullet,
+                            .header__sandwich_btn,
+                            .header__contacts,
+                            .header__menu_btn,
                             .year`;
 
       if ([1, 3, 4, 5].includes(activeIndex)) {
-        $(changeBlueItems).toggleClass("change_blue");
+        $(changeBlueItems).addClass("change_blue");
       } else {
         $(changeBlueItems).removeClass("change_blue");
       }

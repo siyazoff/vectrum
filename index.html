@@ -13,9 +13,15 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="src/fonts/Helvetica/stylesheet.css" />
-    <link rel="stylesheet" href="src/fonts/Helv/stylesheet.css" />
     <link rel="stylesheet" href="src/fonts/handil-pro/style.css" />
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- cdn  -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/cferdinandi/tabby@12.0.0/dist/css/tabby-ui.min.css"
+    />
   </head>
   <body>
     <header class="header" id="header">
@@ -158,7 +164,7 @@
       <div class="swiper-main">
         <div class="swiper-pagination"></div>
         <div class="swiper-wrapper">
-          <div class="swiper-slide d-none">
+          <div class="swiper-slide">
             <section class="home">
               <div class="home__bg"></div>
               <div class="home__content">
@@ -181,7 +187,7 @@
               </div>
             </section>
           </div>
-          <div class="swiper-slide d-none">
+          <div class="swiper-slide">
             <section class="medication">
               <div class="medication_content">
                 <div class="heading medication__heading">
@@ -425,9 +431,246 @@
               </div>
             </section>
           </div>
-          <div class="swiper-slide">first</div>
-          <div class="swiper-slide">first</div>
-          <div class="swiper-slide">first</div>
+          <div class="swiper-slide">
+            <section class="services">
+              <div class="services__content">
+                <div class="heading services__heading">
+                  <h2 class="paragraph-p">Услуги</h2>
+                  <h3 class="title-secondary">
+                    Услуги для вас и ваших животных
+                  </h3>
+                </div>
+                <div class="services__box">
+                  <div class="services__tabs">
+                    <ul data-tabs>
+                      <li>
+                        <a data-tabby-default href="#first-tab">
+                          <h3 class="paragraph-h">Ветеринарные консультации</h3>
+                          <span class="title-secondary">01</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#second-tab">
+                          <h3 class="paragraph-h">Вакцинация и профилактика</h3>
+                          <span class="title-secondary">02</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#third-tab">
+                          <h3 class="paragraph-h">
+                            Хирургические вмешательства
+                          </h3>
+                          <span class="title-secondary">03</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#fourth-tab">
+                          <h3 class="paragraph-h">Лабораторная диагностика</h3>
+                          <span class="title-secondary">04</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="services__desc">
+                    <div class="services__desc_inner" id="first-tab">
+                      <div
+                        class="services__bg"
+                        style="
+                          background-image: linear-gradient(
+                              0deg,
+                              rgba(23, 23, 23, 0.8) 0%,
+                              rgba(23, 23, 23, 0.8) 100%
+                            ),
+                            url('src/img/serv-1.webp');
+                        "
+                      ></div>
+                      <h3 class="paragraph-h">Ветеринарные консультации</h3>
+                      <hr />
+                      <p class="paragraph-p">
+                        Наши опытные ветеринары готовы предоставить вам
+                        профессиональные консультации по здоровью ваших
+                        животных.
+                        <br />
+                        <br />
+                        Мы ответим на ваши вопросы, касающиеся диеты, ухода,
+                        поведения и общего благополучия ваших питомцев.
+                        <br />
+                        <br />
+                        Консультации могут быть как в клинике, так и удаленными
+                        через телефон или онлайн.
+                      </p>
+                      <a href="#" class="button margin">Заказть услугу</a>
+                      <a href="#" class="button button__outline">Подробнее</a>
+                    </div>
+                    <div class="services__desc_inner" id="second-tab">...</div>
+                    <div class="services__desc_inner" id="third-tab">...</div>
+                    <div class="services__desc_inner" id="fourth-tab">...</div>
+                  </div>
+                  <div class="services__pride">
+                    <p>
+                      Мы гордимся нашей ролью в поддержании здоровья ваших
+                      животных и благополучии вашего бизнеса. Наши действия
+                      говорят сами за себя, и мы готовы доказать нашу
+                      преданность вашим потребностям и интересам в мире
+                      ветеринарной медицины.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="swiper-slide">
+            <section class="news">
+              <div class="news__content">
+                <div class="news_head">
+                  <div class="heading news__heading">
+                    <h2 class="paragraph-p">Новости</h2>
+                    <h3 class="title-secondary">Новости и обновления</h3>
+                  </div>
+                  <a href="#" class="button">Другие новости</a>
+                </div>
+                <div class="news__box">
+                  <div class="grid">
+                    <div class="left-wrapper">
+                      <div class="grid_item">
+                        <h2 class="title-news">
+                          Семинар по уходу за скотом: опытные ветеринары делятся
+                          советами
+                        </h2>
+                        <p class="item-p">
+                          Наши ветеринарные эксперты провели успешный семинар,
+                          посвященный уходу за скотом. Участники получили ценные
+                          знания и практические навыки в вопросах профилактики и
+                          лечения животных. Мы продолжаем поддерживать
+                          образование и развитие ветеринарного сообщества.
+                        </p>
+                        <div class="date-and-link">
+                          <p class="title-date">25 октября 2023 года</p>
+                          <a href="#">Читать подробнее</a>
+                        </div>
+                      </div>
+                      <div class="grid_item">
+                        <h2 class="title-news">
+                          Новый прорыв в борьбе с вирусами: введение
+                          инновационной ветеринарной вакцины
+                        </h2>
+                        <p class="item-p">
+                          Наша компания рада сообщить о успешном запуске новой
+                          вакцины, спроектированной для эффективной борьбы с
+                          вирусами, угрожающими здоровью животных. Это большой
+                          шаг в обеспечении безопасности скота и птицы в
+                          Казахстане. Ожидается, что это новшество значительно
+                          снизит риски инфекционных заболеваний. Следите за
+                          обновлениями!
+                        </p>
+                        <div class="date-and-link">
+                          <p class="title-date">10 ноября 2023 года</p>
+                          <a href="#">Читать подробнее</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="right-wrapper">
+                      <div class="grid_item">
+                        <h2 class="title-news">
+                          Новая линейка ветеринарных препаратов: результат
+                          исследований и инновации
+                        </h2>
+                        <p class="item-p">
+                          Мы гордимся представить нашу новую линейку
+                          ветеринарных препаратов, разработанных на основе
+                          современных научных исследований. Эти инновационные
+                          продукты помогут в укреплении здоровья животных и
+                          улучшении результатов скотоводства. Наши усилия
+                          направлены на повышение качества жизни животных и их
+                          хозяев.
+                        </p>
+                        <div class="date-and-link">
+                          <p class="title-date">25 октября 2023 года</p>
+                          <a href="#">Читать подробнее</a>
+                        </div>
+                      </div>
+                      <div class="grid_item">
+                        <h2 class="title-news">
+                          Семинар по уходу за скотом: опытные ветеринары делятся
+                          советами
+                        </h2>
+                        <p class="item-p">
+                          Наши ветеринарные эксперты провели успешный семинар,
+                          посвященный уходу за скотом. Участники получили ценные
+                          знания и практические навыки в вопросах профилактики и
+                          лечения животных. Мы продолжаем поддерживать
+                          образование и развитие ветеринарного сообщества.
+                        </p>
+                        <div class="date-and-link">
+                          <p class="title-date">25 октября 2023 года</p>
+                          <a href="#">Читать подробнее</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="swiper-slide">
+            <section class="contacts">
+              <div class="contacts__content">
+                <div class="heading contacts__heading">
+                  <h2 class="paragraph-p">Контакты</h2>
+                  <h3 class="title-secondary">Наши контактные данные</h3>
+                </div>
+                <div class="contacts__box">
+                  <div class="contacts__box_inner addresses">
+                    <h2 class="title-news">г.Астана</h2>
+                    <p class="paragraph-p">пр.Сарыарка 17 офис 29, 31, 36</p>
+                    <p class="paragraph-p">
+                      <a href="tel:+7 705 749 17 25">+7 705 749 17 25</a>
+                    </p>
+                    <p class="paragraph-p">
+                      <a href="tel:+7 7172 76 00 21">+7 7172 76 00 21</a>
+                    </p>
+                    <p class="paragraph-p">
+                      <a href="mailto:inform@avaq.kz">inform@avaq.kz</a>
+                    </p>
+                  </div>
+                  <div class="contacts__box_inner order">
+                    <h2 class="paragraph-h">Оставить завяку</h2>
+                    <form>
+                      <input type="text" placeholder="Имя" />
+                      <input
+                        type="tel-number"
+                        id="tel-number"
+                        placeholder="Номер телефона"
+                      />
+                      <input
+                        class="button"
+                        type="submit"
+                        value="Оставить заявку"
+                      />
+                    </form>
+                  </div>
+                </div>
+                <img src="src/img/contact.webp" alt="contact" />
+                <div class="foot">
+                  <div class="foot__top">
+                    <a class="paragraph-p" href="#">Главная</a>
+                    <a class="paragraph-p" href="#">О компании</a>
+                    <a class="paragraph-p" href="#">Новости</a>
+                    <a class="paragraph-p" href="#">Каталог товартов</a>
+                    <a class="paragraph-p" href="#">Услуги</a>
+                    <a class="paragraph-p" href="#">Контакты</a>
+                  </div>
+                  <div class="foot__bottom">
+                    <p class="paragraph-p">© 2023 Vectrum Pro</p>
+                    <a target="_blank" href="https://www.factum.agency"
+                      ><p>Сделано в FACTUM</p>
+                      <img src="src/img/kitty.svg" alt="@hellomeowty" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
       </div>
     </main>
@@ -438,5 +681,12 @@
     <script src="js/maskedinput.js"></script>
     <script src="js/custom-swiper.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- cdn -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/tabby@12.0.0/dist/js/tabby.polyfills.min.js"></script>
+
+    <script>
+      var tabs = new Tabby("[data-tabs]");
+    </script>
   </body>
 </html>

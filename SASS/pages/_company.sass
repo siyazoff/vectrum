@@ -1,5 +1,6 @@
 .company
     padding-top: 4.4rem
+    height: 100%
     &__bg
         position: absolute
         top: 0
@@ -11,6 +12,10 @@
         background: url(../src/img/bg-about.webp) center / cover, #171717CC
     &__content
         width: 69.3vw
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
 
     &__box
         padding: 2rem 6.4rem 4rem 3.2rem
@@ -29,6 +34,7 @@
         grid-template-columns: repeat(4, 1fr)
         height: 26.341463414634145vh
         border-top: .1rem solid $color-gray
+        margin-top: auto
 
         .fact
             padding: 3.6rem 3.2rem
