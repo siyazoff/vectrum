@@ -12,17 +12,7 @@ const swiperMain = new Swiper(".swiper-main", {
   mousewheel: {
     releaseOnEdges: true,
   },
-  effect: "creative",
-  creativeEffect: {
-    prev: {
-      translate: [0, "-100%", 0],
-    },
-    next: {
-      translate: [0, "200%", 0],
-    },
-  },
   speed: 1000,
-
   pagination: {
     el: ".swiper-pagination",
     clickable: true,

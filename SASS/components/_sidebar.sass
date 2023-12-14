@@ -89,5 +89,68 @@
                         line-height: 12px
                         color: $color-blue
                         transition: all .3s
+    .sandwich__mobile
+        display: none
                             
 
+@media all and ( max-width: 76.8rem )
+    .sidebar_lines
+        &::before, &::after
+            display: none
+
+    .sandwich_menu
+        padding: 0 
+
+        &__section
+            padding-left: 0
+            padding-right: 0
+            height: 100%
+            display: flex
+            flex-direction: column
+
+            .address
+                display: none
+
+        .sandwich_box
+            justify-content: center
+            text-align: center
+            margin-top: 13rem
+            ul
+                font-size: 2.8rem
+                line-height: 3.2rem
+                li
+                    a
+                        margin-bottom: 2rem
+                        
+                &:hover a 
+                    opacity: .3
+
+                & li a:hover
+                    opacity: 1
+
+            .form_wrapper
+                display: none
+
+        .sandwich__mobile
+            display: flex
+            flex-direction: column
+            gap: 2rem
+            font-size: 1.5rem
+            font-weight: 400
+            line-height: 2.4rem
+            margin-top: auto
+            margin-bottom: 6rem
+            padding-inline: 1.6rem
+
+            p
+                max-width: 24.7rem
+
+            &_contacts
+                display: flex
+                justify-content: space-between
+                align-items: end
+                &_links
+                    display: flex
+                    flex-direction: column
+                    gap: .8rem
+            
