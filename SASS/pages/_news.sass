@@ -47,11 +47,14 @@
                 transition: all 1s ease
 
             p
-                color: #434443
+                color: $-color-gray-light
                 transition: all 1s ease
 
             .item-p
                 margin-bottom: 1.6rem
+                font-size: 1.5rem
+                font-weight: 400
+                line-height: 2.4rem
 
             .date-and-link
                 display: flex
@@ -60,6 +63,8 @@
 
                 a
                     color: $color-blue
+                p
+                    font-family: "Helvetica"
 
             &::after
                 content: ''
@@ -84,3 +89,50 @@
                     a,p
                         color: $color-white
                         
+                        
+
+@media all and (max-width: 76.8rem)
+    .news
+        padding-top: 6rem
+
+        &__content
+            width: 100%
+
+        &_head
+            padding-right: 0
+            padding-inline: 1.6rem
+
+            a
+                &:link, &:visited
+                    display: none
+
+        &__box
+            border-top: none
+            border-bottom: none
+            display: flex
+            flex-direction: column
+            gap: 3.2rem
+
+        .grid
+            grid-template-columns: repeat(1, 1fr)
+
+            &_item
+                padding: 1.6rem
+                border: none
+                border-top: .1rem solid $color-violet
+
+                &:last-child
+                    border-bottom: .1rem solid $color-violet
+                h2
+                    margin-bottom: 0.8rem
+
+                .item-p
+                    margin-bottom: 2rem
+                    font-size: 1.3rem
+                    line-height: 2rem
+
+
+        a.button
+            &:link, &:visited
+                width: 95%
+                margin-inline: auto

@@ -145,3 +145,65 @@
             height: 36.1219512195122vh
             .margin_inner_a
                 width: fit-content
+
+
+@media all and ( max-width: 76.8rem )
+    .medication
+        padding: 6rem 0 0 0 
+
+        &_content
+            width: 100%
+
+        &__heading
+            margin-inline: 1.6rem
+
+        &__grid_1
+            grid-template-columns: repeat(1, 1fr)
+
+        &__card
+            padding: 2.8rem 1.6rem 4rem
+            height: 30rem
+            border: none
+            border-top: .1rem solid $color-violet
+
+            .head_card_wrapper
+                display: flex
+                justify-content: space-between
+                flex-direction: row-reverse
+
+            .margin
+                &_h
+                    margin-top: 0
+
+    
+            &_inner
+                padding: 2.8rem 1.6rem 4rem
+                height: 30rem
+
+                .margin_inner
+                    &_p
+                        margin-top: 2rem
+
+                    &_h
+                        margin-top: 0
+
+        &__grid_2
+            grid-template-columns: repeat(1, 1fr)
+
+        &__card_big
+            height: 30rem
+            padding: 2.8rem 1.6rem 4rem
+            border-bottom: none
+
+            .body_card
+                margin-top: 2rem
+                p
+                    max-width: 100%
+
+                img
+                    display: none
+            &_inner
+                height: 30rem
+
+                .margin_inner_a
+                    width: 100%

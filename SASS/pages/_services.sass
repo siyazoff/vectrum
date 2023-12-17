@@ -94,3 +94,61 @@
             font-weight: 400
             line-height: 20px
             color: $-color-gray-light
+
+@media all and (max-width: 76.8rem)
+    .services
+        padding-top: 6rem
+        height: 100%
+
+        &__content
+            width: 100%
+
+        &__heading
+            margin-inline: 1.6rem
+
+        &__box
+            grid-template-columns: repeat(1, 1fr)
+            grid-template-rows: none
+            height: 100%
+            margin-top: 2.5rem
+
+        &__tabs
+            width: auto
+            overflow-x: scroll
+            overflow-y: hidden
+            &::-webkit-scrollbar
+                height: .5rem
+
+            &::-webkit-scrollbar-track 
+                background: $-color-blue-dark
+
+
+            &::-webkit-scrollbar-thumb 
+                background: $color-blue
+                    
+            [data-tabs]
+                display: flex
+                li
+                    width: fit-content
+                    flex-shrink: 0
+                    a
+                        padding: 1.6rem
+                        gap: 7rem
+                        width: fit-content
+        &__desc
+            grid-row: none
+
+            &_inner
+                padding: 1.6rem 1.6rem 3.2rem 1.6rem
+
+              
+                hr
+                    top: 5rem
+                p
+                    margin-top: 3.7rem
+                    margin-bottom: 3.8rem
+
+                    
+        &__pride
+            padding: 1.6rem 1.6rem 0
+            margin-top: 0

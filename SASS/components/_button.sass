@@ -28,3 +28,16 @@
         &:link, &:visited
             background-color: #5188DA
             color: $color-white
+    &__mobile
+        &:link, &:visited
+            display: none
+
+
+@media all and ( max-width: 76.8rem )
+    .button
+        &__mobile
+            &:link, &:visited
+                display: inline-block
+                border: .1rem solid $-color-blue-dark
+                text-align: center
+    
