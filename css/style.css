@@ -567,7 +567,7 @@ body {
     gap: 0.8rem;
   }
 }
-.swiper-main {
+[class^=swiper-main] {
   position: relative;
   width: 100%;
   height: 100%;
@@ -576,7 +576,7 @@ body {
   list-style: none;
   z-index: 1;
 }
-.swiper-main > .swiper-pagination {
+[class^=swiper-main] > .swiper-pagination {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -589,7 +589,7 @@ body {
   width: -moz-fit-content;
   width: fit-content;
 }
-.swiper-main > .swiper-pagination > .swiper-pagination-bullet {
+[class^=swiper-main] > .swiper-pagination > .swiper-pagination-bullet {
   position: relative;
   font-size: 15px;
   font-style: normal;
@@ -602,13 +602,13 @@ body {
   color: #9A9DA3;
   opacity: 0.7;
 }
-.swiper-main > .swiper-pagination > .swiper-pagination-bullet.change_blue {
+[class^=swiper-main] > .swiper-pagination > .swiper-pagination-bullet.change_blue {
   color: #7B7A9F;
 }
-.swiper-main > .swiper-pagination > .swiper-pagination-bullet.change_blue::before {
+[class^=swiper-main] > .swiper-pagination > .swiper-pagination-bullet.change_blue::before {
   background: #7B7A9F;
 }
-.swiper-main > .swiper-pagination > .swiper-pagination-bullet::before {
+[class^=swiper-main] > .swiper-pagination > .swiper-pagination-bullet::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -620,43 +620,43 @@ body {
   margin-left: 2.8rem;
   transition: all 0.5s;
 }
-.swiper-main > .swiper-pagination > .swiper-pagination-bullet-active {
+[class^=swiper-main] > .swiper-pagination > .swiper-pagination-bullet-active {
   backface-visibility: hidden;
   color: #FFF;
   opacity: 1;
 }
-.swiper-main > .swiper-pagination > .swiper-pagination-bullet-active.change_blue {
+[class^=swiper-main] > .swiper-pagination > .swiper-pagination-bullet-active.change_blue {
   color: #063479;
 }
-.swiper-main > .swiper-pagination > .swiper-pagination-bullet-active.change_blue::before {
+[class^=swiper-main] > .swiper-pagination > .swiper-pagination-bullet-active.change_blue::before {
   background: #063479;
 }
-.swiper-main > .swiper-pagination > .swiper-pagination-bullet-active::before {
+[class^=swiper-main] > .swiper-pagination > .swiper-pagination-bullet-active::before {
   background: #FFF;
   width: 5.6rem;
   margin-left: 0;
 }
-.swiper-main > .swiper-wrapper {
+[class^=swiper-main] > .swiper-wrapper {
   transition: 1000ms;
   height: 100vh;
 }
-.swiper-main > .swiper-wrapper > .swiper-slide {
+[class^=swiper-main] > .swiper-wrapper > .swiper-slide {
   padding-left: 19.5833333333%;
   overflow: hidden;
 }
 
 @media all and (max-width: 76.8rem) {
-  .swiper-main {
+  [class^=swiper-main] {
     max-height: none;
   }
-  .swiper-main > .swiper-pagination {
+  [class^=swiper-main] > .swiper-pagination {
     display: none;
   }
-  .swiper-main > .swiper-wrapper {
+  [class^=swiper-main] > .swiper-wrapper {
     height: auto;
     flex-direction: column;
   }
-  .swiper-main > .swiper-wrapper > .swiper-slide {
+  [class^=swiper-main] > .swiper-wrapper > .swiper-slide {
     padding-inline: 0;
   }
 }
@@ -1483,6 +1483,12 @@ body {
   width: 100%;
   margin-bottom: auto;
 }
+.contacts img.img_desktop {
+  display: block;
+}
+.contacts img.img_mobile {
+  display: none;
+}
 .contacts .foot {
   padding: 4.8rem 3.2rem 7.6rem;
   display: flex;
@@ -1569,6 +1575,12 @@ body {
   .contacts__box .order input:nth-child(2) {
     margin-bottom: 2rem;
   }
+  .contacts img.img_desktop {
+    display: none;
+  }
+  .contacts img.img_mobile {
+    display: block;
+  }
   .contacts .foot {
     padding: 6rem 1.6rem 2rem;
   }
@@ -1582,5 +1594,219 @@ body {
   }
   .contacts .foot__bottom {
     margin-top: 3.2rem;
+  }
+}
+.vaccine_home {
+  padding-top: 4.4rem;
+  padding-bottom: 7.6rem;
+  height: 100%;
+}
+.vaccine_home__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-blend-mode: darken;
+  background: url(../src/img/vaccine_home_bg.webp) center/cover, rgba(23, 23, 23, 0.8);
+}
+.vaccine_home__content {
+  width: 69.3vw;
+  height: 100%;
+  padding-left: 3.2rem;
+  padding-right: 5.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.vaccine_home__box {
+  display: flex;
+  flex-direction: column;
+}
+.vaccine_home__box-descr {
+  margin-left: 8rem;
+  margin-top: 1.2rem;
+}
+.vaccine_home__box .for-margin {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-top: 2.8rem;
+}
+.vaccine_home__box .for-margin:last-child {
+  margin-top: 1.6rem;
+}
+
+@media all and (max-width: 76.8rem) {
+  .vaccine_home {
+    padding-top: 0;
+    padding-bottom: 4rem;
+    height: 100vh;
+  }
+  .vaccine_home__content {
+    width: 100%;
+    padding-inline: 1.6rem;
+    justify-content: end;
+  }
+  .vaccine_home__content .address {
+    display: none;
+  }
+  .vaccine_home__box-descr {
+    margin-left: 0;
+    margin-top: 1.6rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+  .vaccine_home__box .for-margin {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 4.3rem;
+    text-align: center;
+  }
+}
+.vaccine_immunocomplex {
+  padding-top: 4.4rem;
+  height: 100%;
+}
+.vaccine_immunocomplex_content {
+  width: 69.3vw;
+  height: 100%;
+}
+.vaccine_immunocomplex__heading {
+  position: relative;
+  flex-direction: row;
+}
+.vaccine_immunocomplex__heading h2 {
+  color: #434443;
+}
+.vaccine_immunocomplex__heading h3 {
+  color: #063479;
+}
+.vaccine_immunocomplex__heading .inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+}
+.vaccine_immunocomplex__heading .box-swiper-items {
+  position: relative;
+  width: 100%;
+  max-width: 20rem;
+  margin-right: 2rem;
+  margin-left: auto;
+  display: flex;
+  align-items: end;
+  gap: 1rem;
+}
+.vaccine_immunocomplex__heading .box-swiper-items .swiper-immunocomplex-pagination {
+  top: unset;
+  left: unset;
+  position: relative;
+  order: 0;
+  height: 0.2rem;
+  bottom: 1.2rem;
+}
+.vaccine_immunocomplex__heading .box-swiper-items .swiper-immunocomplex-pagination span {
+  background-color: #5188DA;
+}
+.vaccine_immunocomplex__heading .box-swiper-items .swiper-immunocomplex-button-prev, .vaccine_immunocomplex__heading .box-swiper-items .swiper-immunocomplex-button-next {
+  top: unset;
+  left: unset;
+  right: unset;
+  margin: 0;
+  position: relative;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.vaccine_immunocomplex__heading .box-swiper-items .swiper-immunocomplex-button-prev::after, .vaccine_immunocomplex__heading .box-swiper-items .swiper-immunocomplex-button-next::after {
+  font-size: 1.5rem;
+  color: #5188DA;
+  border-radius: 50%;
+  border: 1px solid #5188DA;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+.vaccine_immunocomplex__heading .box-swiper-items .swiper-immunocomplex-button-next {
+  order: 2;
+}
+.vaccine_immunocomplex__heading .box-swiper-items .swiper-immunocomplex-button-prev {
+  order: 1;
+}
+.vaccine_immunocomplex__box {
+  margin-top: 2rem;
+  height: 100%;
+  border-top: 0.05rem solid #7B7A9F;
+}
+.vaccine_immunocomplex .swiper-immunocomplex {
+  height: 87%;
+  overflow: hidden;
+}
+.vaccine_immunocomplex .swiper-immunocomplex > .swiper-wrapper > .swiper-slide {
+  height: 50%;
+}
+.vaccine_immunocomplex__item {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2.6rem 3.2rem 2rem;
+  height: 100%;
+  align-items: center;
+  border: 0.05rem solid #7B7A9F;
+  margin-bottom: auto;
+}
+.vaccine_immunocomplex__item:hover img {
+  transform: scale(1.2);
+}
+.vaccine_immunocomplex__item img {
+  width: 20rem;
+  height: 20rem;
+  transition: transform 0.2s ease-in-out;
+}
+.vaccine_immunocomplex__item .item_bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+.vaccine_immunocomplex__item .item_bottom h3 {
+  color: #063479;
+}
+.vaccine_immunocomplex__item .item_bottom a {
+  color: #5188DA;
+}
+
+@media all and (max-width: 76.8rem) {
+  .vaccine_immunocomplex {
+    padding-top: 6rem;
+  }
+  .vaccine_immunocomplex_content {
+    width: 100%;
+  }
+  .vaccine_immunocomplex__heading {
+    margin-inline: 1.6rem;
+  }
+  .vaccine_immunocomplex__heading .inner {
+    gap: 1.2rem;
+  }
+  .vaccine_immunocomplex__heading .box-swiper-items {
+    display: none;
+  }
+  .vaccine_immunocomplex .swiper-immunocomplex {
+    height: 100%;
+    overflow: visible;
+  }
+  .vaccine_immunocomplex .swiper-immunocomplex > .swiper-wrapper > .swiper-slide {
+    height: 100%;
+  }
+  .vaccine_immunocomplex__item {
+    padding: 1.6rem 2rem;
+  }
+  .vaccine_immunocomplex__item:hover img {
+    transform: scale(1.1);
   }
 }/*# sourceMappingURL=style.css.map */

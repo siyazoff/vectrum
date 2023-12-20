@@ -1,0 +1,143 @@
+.vaccine_immunocomplex
+    padding-top: 4.4rem
+    height: 100%
+    &_content
+        width: 69.3vw
+        height: 100%
+
+    &__heading
+        position: relative
+        flex-direction: row
+        h2
+            color: #434443
+        h3
+            color: $-color-blue-dark
+
+        .inner
+            display: flex
+            flex-direction: column
+            gap: 2.8rem
+
+        .box-swiper-items
+            position: relative
+            width: 100%
+            max-width: 20rem
+            margin-right: 2rem
+            margin-left: auto
+            display: flex
+            align-items: end
+            gap: 1rem
+
+            .swiper-immunocomplex
+                &-pagination
+                    top: unset
+                    left: unset
+                    position: relative
+                    order: 0
+                    height: .2rem
+                    bottom: 1.2rem
+                    span
+                        background-color: $color-blue
+                &-button-prev, &-button-next
+                    top: unset
+                    left: unset
+                    right: unset
+                    margin: 0
+                    position: relative
+                    height: fit-content
+
+                    &::after
+                        font-size: 1.5rem
+                        color: $color-blue
+                        border-radius: 50%
+                        border: 1px solid $color-blue
+                        width: 3rem
+                        height: 3rem
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        flex-shrink: 0
+
+                &-button-next
+                    order: 2
+                &-button-prev
+                    order: 1
+
+
+    &__box
+        margin-top: 2rem
+        height:  100%
+        // background-color: $color-gray
+        border-top: .05rem solid $color-violet
+
+    .swiper-immunocomplex
+        height: 87%
+        overflow: hidden
+
+        & > .swiper-wrapper
+            & > .swiper-slide
+                height: 50%
+
+
+    &__item
+        display: flex
+        flex-shrink: 0
+        flex-direction: column
+        justify-content: space-between
+        padding: 2.6rem 3.2rem 2rem
+        height: 100%
+        align-items: center
+        border: .05rem solid $color-violet
+        margin-bottom: auto
+
+        &:hover
+            img
+                transform: scale(1.2)
+        img
+            width: 20rem
+            height: 20rem
+            transition: transform .2s ease-in-out
+
+        .item_bottom
+            width: 100%
+            display: flex
+            justify-content: space-between
+            margin-top: 3rem
+            h3
+                color: $-color-blue-dark
+            a
+                color: $color-blue
+
+
+@media all and ( max-width: 76.8rem )
+    .vaccine_immunocomplex
+        padding-top: 6rem
+        &_content
+            width: 100%
+
+        &__heading
+            margin-inline: 1.6rem
+
+            .inner
+                gap: 1.2rem
+
+            .box-swiper-items
+               display: none
+
+
+
+        .swiper-immunocomplex
+            height: 100%
+            overflow: visible
+
+            & > .swiper-wrapper
+                & > .swiper-slide
+                    height: 100%
+
+
+        &__item
+            padding: 1.6rem 2rem
+
+            &:hover
+                img
+                    transform: scale(1.1)

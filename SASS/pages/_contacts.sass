@@ -83,6 +83,10 @@
     img
         width: 100%
         margin-bottom: auto
+        &.img_desktop
+            display: block
+        &.img_mobile
+            display: none
     .foot
         padding: 4.8rem 3.2rem 7.6rem
         display: flex
@@ -164,6 +168,11 @@
                         margin-bottom: 2rem
                     &:nth-child(2)
                         margin-bottom: 2rem
+        img
+            &.img_desktop
+                display: none
+            &.img_mobile
+                display: block
         .foot
             padding: 6rem 1.6rem 2rem
 
