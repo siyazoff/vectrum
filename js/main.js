@@ -21,4 +21,14 @@ $(document).ready(function () {
   $menuBtnClose.click(removeActiveClass);
 
   $telNumberInput.mask("+7 (999) 999-99-99");
+
+  if (window.location.pathname.includes("/product")) {
+    $(
+      `.header__logo, 
+      .header__sandwich_btn, 
+      .header__contacts, 
+      .header__menu_btn, 
+      .year`
+    ).addClass("change_blue");
+  }
 });

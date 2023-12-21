@@ -1,5 +1,6 @@
 let swiperMain = null;
 let swiperVaccine = null;
+let swiperAbout = null;
 
 function initSwiperPage() {
   const swiperMainMenu = [
@@ -98,6 +99,51 @@ function initSwiperPage() {
       },
     },
   });
+
+  const swiperAboutMenu = [
+    "Компания",
+    "Деятельность",
+    "Показатели",
+    "География",
+    "Бренды",
+  ];
+
+  swiperAbout = new Swiper(".swiper-main-about", {
+    direction: "vertical",
+    mousewheel: {
+      releaseOnEdges: true,
+    },
+    freeMode: false,
+    speed: 1000,
+    slidesPerView: 1,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      renderBullet: function (index, className) {
+        return (
+          '<div class="' + className + '">' + swiperAboutMenu[index] + "</div>"
+        );
+      },
+    },
+
+    on: {
+      slideChange: function () {
+        var activeIndex = this.activeIndex;
+        let changeBlueItems = `.header__logo,
+                            .swiper-pagination-bullet,
+                            .header__sandwich_btn,
+                            .header__contacts,
+                            .header__menu_btn,
+                            .year`;
+
+        if ([2, 4].includes(activeIndex)) {
+          $(changeBlueItems).addClass("change_blue");
+        } else {
+          $(changeBlueItems).removeClass("change_blue");
+        }
+      },
+    },
+  });
 }
 
 function destroySwiperPage() {
@@ -109,6 +155,11 @@ function destroySwiperPage() {
   if (swiperVaccine !== null) {
     swiperVaccine.destroy(true, true);
     swiperVaccine = null;
+  }
+
+  if (swiperAbout !== null) {
+    swiperAbout.destroy(true, true);
+    swiperAbout = null;
   }
 }
 
@@ -157,8 +208,22 @@ const buildSwiperSlider = (sliderElm) => {
   });
 };
 
-// Get all of the swipers on the page
 const allSliders = document.querySelectorAll(".swiper-immunocomplex");
 
-// Loop over all of the fetched sliders and apply Swiper on each one.
 allSliders.forEach((slider) => buildSwiperSlider(slider));
+
+const swiperBrands = new Swiper(".swiper-brands", {
+  slidesPerView: 4,
+  grabCursor: true,
+  navigation: {
+    nextEl: ".swiper-brands-right",
+    prevEl: ".swiper-brands-left",
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+    },
+    768: {},
+    1440: {},
+  },
+});

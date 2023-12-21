@@ -1,0 +1,55 @@
+.facts
+    height: 100%
+    padding-top: 4.4rem
+    &__content
+        width: 69.3vw
+        height: 100%
+
+    &__heading
+        h2
+            color: #434443
+        h3
+            color: $-color-blue-dark
+
+    &__box
+        margin-top: 12.4rem
+        padding-inline: 3.2rem
+
+
+    &__grid
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        column-gap: 2.4rem
+        row-gap: 4.5rem
+
+        .item
+            h2
+                color: $color-blue
+                margin-bottom: 1.2rem
+
+            p
+                color: #434443
+
+@media all and ( max-width: 76.8rem )
+    .facts
+        padding-top: 6rem
+        padding-bottom: 12rem
+        &__content
+            width: 100%
+            padding-inline: 1.6rem
+
+        &__box
+            margin-top: 2rem
+            padding-inline: 0
+
+
+        &__grid
+            grid-template-columns: repeat(1, 1fr)
+            column-gap: 4.4rem
+
+
+            .item
+                h3
+                    font-size: 5rem
+                    line-height: 5.6rem
+    

@@ -1,0 +1,228 @@
+.product
+    height: 100%
+    padding-left: 19.5833333333%
+    padding-right: 11.183333%
+
+    &__links
+        position: fixed
+        left: 0
+        top: 50%
+        transform: translateY(-50%)
+        display: flex
+        flex-direction: column
+        gap: 1.6rem
+
+        span
+            position: relative
+            margin-left: 7rem
+            color: $color-violet
+            font-weight: 700
+            &.paragraph-h
+                color: $-color-blue-dark
+                &::before
+                    background: $-color-blue-dark
+                    width: 5.6rem
+                    margin-left: 0
+            &::before 
+                content: ''
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                left: -7rem
+                background: $color-violet
+                width: 2.8rem
+                height: .1rem
+                margin-left: 2.8rem
+    &__content
+        width: 100%
+        padding-top: 4.4rem
+
+        .address
+            padding-left: 3.2rem
+            color: #434443
+
+
+        .wrapper_flex
+            margin-top: 6rem
+            display: flex
+            justify-content: space-between
+            border-top: .1rem solid $color-violet
+            border-bottom: .1rem solid $color-violet
+            width: 100%
+
+            .image
+                max-width: 20.4rem
+                padding: 3rem
+                img
+                    width: 100%
+                    height: 100%
+
+
+            .info
+                padding: 4rem 3.2rem 4.4rem
+                border-left: .1rem solid $color-violet
+
+                h1
+                    margin-bottom: 1.6rem
+                    max-width: 46.7rem
+                    color: #434443
+
+
+
+                p   
+                    max-width: 46.7rem
+                    color: #434443
+
+
+            a
+                height: fit-content
+                margin-top: auto
+                margin-right: 3.2rem
+                margin-bottom: 3.2rem
+
+        .wrapper_composition
+            padding: 2.8rem 3.2rem 8.8rem
+            border-bottom: .1rem solid $color-violet
+            display: flex
+            gap: 2rem
+
+            .left, .right
+                max-width: 50%
+
+            h3
+                color: $-color-blue-dark
+                margin-bottom: .4rem
+
+                &:not(:first-child)
+                    margin-top: 1.2rem
+            p
+                color: #434443
+
+.footer_product
+    padding-left: 19.5833333333%
+    padding-right: 11.183333%
+    padding-top: 4.8rem
+    padding-bottom: 7.6rem
+
+    .top
+        display: flex
+        gap: 4rem
+        justify-content: center
+        margin-bottom: 4.8rem
+
+        a
+            color: #434443
+
+    .bottom
+        display: flex
+        justify-content: space-between
+        padding-inline: 3.2rem
+
+        a
+            display: flex
+            align-items: center
+            gap: 0.4rem
+
+        p, a
+            color: $-color-gray-light
+
+    .logo
+        display: none
+
+
+
+
+
+@media all and ( max-width: 76.8rem )
+    .product
+        padding-left: 0
+        padding-right: 0
+
+        &__links
+            display: none
+        &__content
+            padding-top: 8rem
+
+            .address
+                display: none
+
+
+            .wrapper_flex
+                margin-top: 0
+                justify-content: start
+                flex-direction: column
+                align-items: center
+                border-top: none
+                border-bottom: none
+
+                .image
+                    max-width: 100%
+                    padding: 2rem
+                    order: 1
+                    border-bottom: .1rem solid $color-violet
+                    width: 100%
+                    text-align: center
+                    margin-bottom: 3.2rem
+
+                    img
+                        max-width: 20rem
+
+
+                .info
+                    padding: 1.6rem
+                    border-left: none
+                    order: 0
+                    border-bottom: .1rem solid $color-violet
+
+                    h1
+                        margin-bottom: .4rem
+                        max-width: 100%
+
+                    p   
+                        max-width: 100%
+
+                a
+                    margin-right: 0
+                    margin-bottom: 0
+                    width: 90%
+                    text-align: center
+                    margin-inline: 1.6rem
+                    order: 2
+
+            .wrapper_composition
+                padding: 0 1.6rem 3.2rem
+                border-bottom: .1rem solid $color-violet
+                flex-direction: column
+                gap: 1.2rem
+                margin-top: 5.2rem
+
+                .left, .right
+                    max-width: 100%
+
+
+    .footer_product
+        padding-left: 1.6rem
+        padding-right: 1.6rem
+        padding-top: 6rem
+        padding-bottom: 2rem
+
+        .top
+            gap: .8rem
+            align-items: center
+            margin-bottom: 3.2rem
+            flex-direction: column
+
+
+        .bottom
+            padding-inline: 0
+
+        .logo
+            display: flex
+            justify-content: center
+            margin-bottom: 2.8rem
+
+
+@media all and ( max-width: 35rem )
+    .footer_product .bottom
+        flex-direction: column
+        align-items: center
