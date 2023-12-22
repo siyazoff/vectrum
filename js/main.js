@@ -22,13 +22,18 @@ $(document).ready(function () {
 
   $telNumberInput.mask("+7 (999) 999-99-99");
 
-  if (window.location.pathname.includes("/product")) {
-    $(
-      `.header__logo, 
-      .header__sandwich_btn, 
-      .header__contacts, 
-      .header__menu_btn, 
-      .year`
-    ).addClass("change_blue");
+  const pathsToActivateChangeBlue = ["/product", "/services", "/news"];
+  const shouldActivateChangeBlue = pathsToActivateChangeBlue.some((path) =>
+    window.location.pathname.includes(path)
+  );
+  const itemsWillBlue = `.header__logo,
+                          .swiper-pagination-bullet,
+                          .header__sandwich_btn,
+                          .header__contacts,
+                          .header__menu_btn,
+                          .year`;
+
+  if (shouldActivateChangeBlue) {
+    $(itemsWillBlue).addClass("change_blue");
   }
 });

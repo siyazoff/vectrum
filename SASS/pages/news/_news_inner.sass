@@ -1,0 +1,59 @@
+.news_inner
+    padding-top: 4.4rem
+    padding-left: 19.5833333333%
+    padding-right: 11.183333%
+
+    &__heading
+        padding-right: 3.2rem
+        h2
+            color: #434343
+            display: flex
+            justify-content: space-between
+        h3
+            color: $-color-blue-dark
+
+    &__box
+        padding-inline: 3.2rem
+        margin-top: 2rem
+        border-bottom: .1rem solid $color-violet
+        padding-bottom: 4.8rem
+        
+        img
+            width: 50%
+            height: 100%
+            float: left
+            margin-right: 2.4rem
+            margin-bottom: 1.2rem
+        p
+            color: #434343
+            width: 100%
+
+@media all and ( max-width: 76.8rem )
+    .news_inner
+        padding-top: 10rem
+        padding-left: 0
+        padding-right: 0
+
+        &__content
+            padding-inline: 1.6rem
+            border-bottom: .1rem solid $color-violet
+
+
+        &__heading
+            padding-right: 0
+            h3
+                color: $-color-blue-dark
+
+        &__box
+            padding-inline: 0
+            margin-top: 2rem
+            border-bottom: none
+            padding-bottom: 4.8rem
+            display: flex
+            flex-direction: column-reverse
+            gap: 1.6rem
+            
+            img
+                width: 100%
+                margin-right: 0
+                margin-bottom: 0

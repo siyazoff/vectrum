@@ -1,6 +1,7 @@
 let swiperMain = null;
 let swiperVaccine = null;
 let swiperAbout = null;
+let swiperServices = null;
 
 function initSwiperPage() {
   const swiperMainMenu = [
@@ -141,6 +142,36 @@ function initSwiperPage() {
         } else {
           $(changeBlueItems).removeClass("change_blue");
         }
+      },
+    },
+  });
+
+  const swiperServicesMenu = [
+    "Ветеринарные&nbsp;консульт...",
+    "Вакцинация&nbsp;и&nbsp;профилак...",
+    "Хирургические&nbsp;вмешате...",
+    "Лабораторная&nbsp;диагност...",
+  ];
+
+  swiperServices = new Swiper(".swiper-main-services", {
+    direction: "vertical",
+    mousewheel: {
+      releaseOnEdges: true,
+    },
+    freeMode: false,
+    speed: 1000,
+    slidesPerView: 1,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      renderBullet: function (index, className) {
+        return (
+          '<div class="' +
+          className +
+          '">' +
+          swiperServicesMenu[index] +
+          "</div>"
+        );
       },
     },
   });
