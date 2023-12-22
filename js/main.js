@@ -22,7 +22,12 @@ $(document).ready(function () {
 
   $telNumberInput.mask("+7 (999) 999-99-99");
 
-  const pathsToActivateChangeBlue = ["/product", "/services", "/news"];
+  const pathsToActivateChangeBlue = [
+    "/product",
+    "/services",
+    "/news",
+    "/contacts",
+  ];
   const shouldActivateChangeBlue = pathsToActivateChangeBlue.some((path) =>
     window.location.pathname.includes(path)
   );
