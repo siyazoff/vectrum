@@ -1,0 +1,43 @@
+.modal
+    &-dialog
+        height: 100%
+        display: flex
+    &-content
+        margin-top: auto
+        margin-bottom: auto
+        border: none
+        border-radius: 0
+    &-body
+        padding: 4rem
+        position: relative
+        h2
+            color: $-color-blue-dark
+            margin-bottom: 2.1rem
+        form
+            display: flex
+            flex-direction: column
+            gap: 1.2rem
+
+            input
+                &:not(:last-child)
+                    border-bottom: .1rem solid $color-violet
+                    padding-bottom: .4rem
+                &.submit
+                    display: inline-block
+                    position: relative
+                    background-color: $color-blue
+                    color: $color-white 
+                    padding: 2rem 6rem
+                    border-radius: 2.6rem
+                    font-size: 1.5rem
+                    font-style: normal
+                    font-weight: 400
+                    line-height: 1.2rem
+                    transition: all .3s
+                    margin-top: .4rem
+
+        a
+            position: absolute
+            top: 4rem
+            right: 4rem
+            color: $-color-gray-light

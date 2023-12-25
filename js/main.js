@@ -27,6 +27,8 @@ $(document).ready(function () {
     "/services",
     "/news",
     "/contacts",
+    "/thx",
+    "/404",
   ];
   const shouldActivateChangeBlue = pathsToActivateChangeBlue.some((path) =>
     window.location.pathname.includes(path)

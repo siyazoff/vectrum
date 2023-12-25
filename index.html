@@ -192,7 +192,13 @@
                     медицины и дистрибьютор выдающихся вакцин и препаратов для
                     сельскохозяйственных животных.
                   </p>
-                  <a href="#" class="button for-margin">Препараты</a>
+                  <a
+                    href="#"
+                    class="button for-margin"
+                    data-bs-toggle="modal"
+                    data-bs-target="#servicesModal"
+                    >Препараты</a
+                  >
                 </div>
               </div>
             </section>
@@ -786,6 +792,54 @@
       </div>
     </main>
 
+    <!-- Modal services-->
+    <div
+      class="modal fade"
+      id="servicesModal"
+      tabindex="-1"
+      aria-labelledby="servicesModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h2 class="title-secondary">Заказть услугу</h2>
+
+            <form>
+              <input type="text" id="name" placeholder="Имя" />
+              <input type="tel" id="tel-number" placeholder="Номер телефона" />
+              <input type="submit" class="submit" value="Оставить заявку" />
+            </form>
+            <a href="#" class="paragraph-p" data-bs-dismiss="modal">Закрыть</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal cost-->
+    <div
+      class="modal fade"
+      id="costModal"
+      tabindex="-1"
+      aria-labelledby="costModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h2 class="title-secondary">Узнать стоимость</h2>
+
+            <form>
+              <input type="text" id="name" placeholder="Имя" />
+              <input type="tel" id="tel-number" placeholder="Номер телефона" />
+              <input type="submit" class="submit" value="Оставить заявку" />
+            </form>
+            <a href="#" class="paragraph-p" data-bs-dismiss="modal">Закрыть</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
@@ -795,7 +849,6 @@
 
     <!-- cdn -->
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/tabby@12.0.0/dist/js/tabby.polyfills.min.js"></script>
-
     <script>
       var tabs = new Tabby("[data-tabs]");
     </script>

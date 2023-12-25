@@ -1,0 +1,67 @@
+.not_found
+    &__content
+        padding-inline: 3.2rem
+        height: 100%
+        display: flex
+        justify-content: space-between
+        border-bottom: .1rem solid $color-violet
+
+        .left
+        h1, h2
+            color: $-color-blue-dark
+        h1
+            font-size: 12.8rem
+            // line-height: 12.8rem
+            margin-bottom: 1.6rem
+
+        p
+            color: #434443
+            margin-bottom: 3.6rem
+            margin-top: 2rem
+
+        a
+            text-align: center
+            width: 100%
+
+        .right
+            max-width: 46.7rem
+            img
+                width: 100%
+                height: 100%
+                position: relative
+                top: -10rem
+
+@media all and ( max-width: 76.8rem )
+    .not_found
+        padding-top: 12rem
+        border-bottom: .1rem solid $color-violet
+        &__content
+            padding-inline: 1.6rem
+            border-bottom: none
+            text-align: center
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            width: 100%
+            height: fit-content
+            justify-content: center
+
+            .left
+            h1, h2
+                color: $-color-blue-dark
+            h1
+                font-size: 12.8rem
+                margin-bottom: 1.6rem
+
+            p
+                color: #434443
+                margin-bottom: 3.6rem
+                margin-top: 2rem
+
+            a
+                text-align: center
+                width: 100%
+
+            .right
+                display: none
